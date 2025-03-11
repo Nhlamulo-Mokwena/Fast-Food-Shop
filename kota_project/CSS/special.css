@@ -1,0 +1,52 @@
+/* CSS RESEY STYLE SHEET REMOVING DEFAULT STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STYLING THE BODY OF THE PAGE*/
+body{
+    font-family: sans-serif;
+}
+
+/* STYLING THE HEADER NAVIGATION */
+ul{
+    margin-top: 20px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+ul li a{
+    text-decoration:none;
+    color: black;
+    font-variant: small-caps;
+}
+
+ul li a:hover{
+    color: #023047;
+}
+
+/* STYLIG THE SPECIAL HEADING INSIDE THE HEADER */
+header h3{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* STYLING THE HORIZONTAL LINE AFTER THE HEADING */
+header hr{
+    border-top-width:10px;
+    border-color: #023047   ;
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* STYLING THE TEXT AFTER THE HORIZONTAL LINE */
+header p{
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-align: center;
+
+}

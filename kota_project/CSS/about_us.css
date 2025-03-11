@@ -1,0 +1,226 @@
+/* CREATING CSS RESET STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STYLING THE BODY ON THE PAGE */
+body{
+    font-family: sans-serif;
+}
+
+header .header_icons img{
+    text-align: right;
+    position: relative;
+    bottom:75px;
+    left:1120px;
+    margin-right: 20px;
+}
+
+/* STYLING THE HEADER ON THE PAGE */
+header{
+    background-color: #023047;
+    max-height: 100px;
+}
+
+header,main,footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* styling the navigation list */
+nav ul{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 39px;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+ color: rgb(255, 145, 0);
+}
+
+#serch_box{
+    padding: 12px;
+    margin-left: 20px;
+    width: 15%;
+    border-radius: 60px;
+    background-color: rgb(242, 237, 237);
+    font-size: 1.2rem;
+    transition-property: width;
+    transition-duration: 10s;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+}
+
+#serch_box:hover{
+    cursor: pointer;
+    width: 35%;
+}
+
+/* STYLING THE MAIN CONTENT ON THE PAGE */
+main .image_store{
+    background-image: url('../images/fastFoodResturan2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    max-height: 960px;
+    position: relative;
+    bottom:44px;
+    animation-name: backgroundChange;
+    animation-duration: 30s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backgroundChange {
+    33.33%{
+        background-image: url('../images/fastFoodResturan2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    66.33%{
+        background-image: url('../images/fastFoodResturant.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background-image: url('../images/fastFoodResturant4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/* styling the footer elemnt */
+
+footer {
+    display: flex;
+    float: right;
+    flex-direction: row;
+    gap:70px;
+    color: antiquewhite;
+    font-size: 1.1rem;
+    /* background-color: rgb(103, 93, 93); */
+    background-color: #023047;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer p{
+    padding-top: 75px;
+    width: 40%;
+    display: inline;
+    font-family: cursive;
+
+}
+
+footer h2{
+    display: inline;
+    position: relative;
+    left:78px
+}
+
+/* STYLING THE MAIN CONTENT ON THE PAGE */
+main .about_text{
+    width: 80%;
+    margin: 0 auto;
+    border:1px solid balck;
+}
+
+main .about_text p{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+main .about_text h2{
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+main .about_text hr{
+    position: relative;
+    bottom:40px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: #023047;
+}
+
+/* styling the duration */
+main .open_hours{
+    width: 100%;
+}
+main .open_hours h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+main .open_hours ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+main .open_hours li{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+main .open_hours li:hover{
+    background-color:#023047;
+    color:white;
+    cursor: pointer;
+}
+
+
+
+main .open_hours hr{
+    position: relative;
+    bottom:20px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: #023047;
+}
+
+
+/* styling the media logos on the footer */
+footer .logo_styles{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    position: relative;
+    right:1050px;
+    top:310px
+}
+

@@ -1,0 +1,195 @@
+/* styling the body */
+body{
+    background-color: #023047;
+}
+header{
+    background-color: #023047;
+    max-height: 100px;
+}
+
+header,main,footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* styling the navigation list */
+nav ul{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 39px;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+ color: rgb(255, 145, 0);
+}
+
+#serch_box{
+    padding: 12px;
+    margin-left: 20px;
+    width: 30%;
+    border-radius: 60px;
+    background-color: rgb(242, 237, 237);
+    font-size: 1.2rem;
+}
+
+
+
+/* styling the main content */
+
+main {
+    background-image: url(../images/hamburger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+    animation-name: changeBackground;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    animation-delay: 3s;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode: backwards;
+   
+}
+/* creating animation on the background image */
+@keyframes changeBackground {
+    20%{
+        background-image: url(../images/hamburger.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.7;
+    }
+    40%{
+            background-image: url(../images/club-sandwich.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+    }
+
+    60%{
+        background-image: url(../images/roadhouse.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.7;
+    }
+
+    80%{
+        background-image: url(../images/usa_junk.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.7;
+    }
+
+    100%{
+        background-image: url(../images/hamburger.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.7;
+    }
+}
+
+main p{
+    text-align: center;
+    position: relative;
+    top:170px;
+    color: white;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 2.3rem;
+}
+
+
+main #see_button{
+    position: relative;
+    left:510px;
+    top: 170px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 50px;
+    font-family: cursive;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    
+}
+
+#see_button:hover{
+    background-color:#023047;
+    color: orange;
+    cursor: pointer;
+}
+
+#see_button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* styling the footer elemnt */
+
+footer {
+    display: flex;
+    float: right;
+    flex-direction: row;
+    gap:70px;
+    color: antiquewhite;
+    font-size: 1.1rem;
+    /* background-color: rgb(103, 93, 93); */
+    background-color: #023047;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer p{
+    padding-top: 75px;
+    width: 40%;
+    display: inline;
+    font-family: cursive;
+
+}
+
+footer h2{
+    display: inline;
+    position: relative;
+    left:78px
+}
+
+/* styling the media logos on the footer */
+footer .logo_styles{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    position: relative;
+    right:1050px;
+    top:310px
+}
+
+/* styling the shopping cart icon in the header */
+header .cart_icon{
+    position: relative;
+    left:1174px;
+    bottom:70px
+}
+
+header .account_icon{
+    position: relative;
+    left:1100px;
+    bottom:110px
+}

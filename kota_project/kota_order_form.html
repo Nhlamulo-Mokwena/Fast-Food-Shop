@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>junktown_fastfood</title>
+    <link rel="stylesheet" href="CSS/kota_form.css">
+</head>
+<body>
+    <header>
+        <h1>junk food Town &copy;</h1>
+        <p class="head_text">junk the junk food</p>
+    </header>
+    <main>
+        <form>
+            <fieldset class="customer_form">
+                <legend>customer information</legend>
+                <fieldset>
+                    <label for="">firstname</label>
+                    <input class="Fname_style" type="text" name="fname" id="js_Fname" placeholder="enter name"><br>
+
+                    <label for="">lastname</label>
+                    <input class="Lname_style" type="text" name="lname" id="js_Lname"><br>
+
+                    <label for="">email</label>
+                    <input class="email_style" type="email" name="email" id="js_email" placeholder="enter email"><br>
+
+                    <label for="">phone-number</label>
+                    <input class="contact_style" type="tel" name="contact" id="js_contact" placeholder="enter contact">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Kota menus</legend>
+                    <input type="checkbox" name="" id="js_kota">
+                    <label class="kota_label1" for="">peri peri chicken liver</label><br>
+                    <input type="checkbox" name="" id="js_kota">
+                    <label class="kota_label2" for="">mince & cheese</label><br>
+                    <input type="checkbox" name="" id="js_kota">
+                    <label class="kota_label3" for="">chicken mayo</label><br>
+                    <input type="checkbox" name="" id="js_kota">
+                    <label class="kota_label4" for="">jozi kota</label><br>
+                    <input type="checkbox" name="" id="js_kota">
+                    <label class="kota_label5"for="">dagwood</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>burger menu</legend>
+                    <input type="checkbox" name="" id="js_burger">
+                    <label for="">cheesy bacon</label><br>
+                    <input type="checkbox" name="" id="js_burger">
+                    <label for="">cheese chicken & pine</label><br>
+                    <input type="checkbox" name="" id="js_burger">
+                    <label for="">chilli chicken & bacon</label><br>
+                    <input type="checkbox" name="" id="js_burger">
+                    <label for="">crumbed chicken</label><br>
+                    <input type="checkbox" name="" id="js_burger">
+                    <label for="">classic burger</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>chicken & chips menus</legend>
+                    <input type="checkbox" name="" id="js_chicken">
+                    <label for="">4pc winglet & chips</label><br>
+                    <input type="checkbox" name="" id="js_chicken">
+                    <label for="">8pc winglet & chips</label><br>
+                    <input type="checkbox" name="" id="js_chicken">
+                    <label for="">12 chicken pc & chips</label><br>
+                    <input type="checkbox" name="" id="js_chicken">
+                    <label for="">16pc winglet</label><br>
+                    <input type="checkbox" name="" id="js_chicken">
+                    <label for="">full chicken & chips</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>milkshakes menu</legend>
+                    <input type="checkbox" name="" id="js_milkshake">
+                    <label for="">strawbery whirl</label><br>
+                    <input type="checkbox" name="" id="js_milkshake">
+                    <label for="">perppermint orio</label><br>
+                    <input type="checkbox" name="" id="js_milkshake">
+                    <label for="">nutella coffe</label><br>
+                    <input type="checkbox" name="" id="js_milkshake">
+                    <label for="">crunchie nutty</label><br>
+                    <input type="checkbox" name="" id="js_milkshake">
+                    <label for="">honeycomb & milky</label><br><br>
+                    <input onclick="orderInfo();" class="submit_style_btn" type="submit" value="SUBMIT">
+                    <input class="reset_style_btn" type="reset" value="RESET">
+                </fieldset>
+            </fieldset>
+        </form>
+    </main>
+    
+    <script src="scripts/kota.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* styling the body */
+body{
+    background-color: rgb(43, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+/* styling the head of the page */
+
+header {
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    background-color: teal;
+}
+
+header p{
+    font-family: cursive;
+}
+
+/* styling the main content which is the menus */
+ main .kota_menus , main .chicken_menu{
+    border: 1px solid white;
+    margin-top: 15px;
+ }
+
+ main .kota_menus h2 , main .chicken_menu h2{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: cursive;
+ }
+
+ main .kota_menus img{
+    float: left ;
+    margin-right: 15px;
+ }
+
+ main .kota_menus::after , main .chicken_menu::after{
+    content: '';
+    clear: both;
+    display: table;
+ }
+
+ .kota_menus table,td,th , .chicken_menu table,th,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+ }
+
+ /* styling the first row of the th */
+ .kota_menus .first_row_style , .chicken_menu .first_row_style{
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-family: cursive;
+ }
+
+ /* styling the first row of the th */
+
+ .kota_menus .style_td , .chicken_menu .style_td{
+    text-transform: uppercase;
+    color: white;
+ }
+
+ .kota_menus .meal_styles , .chicken_menu .price_styles{
+    color: white;
+ }
+
+ .kota_menus .price_styles{
+    padding: 10px;
+    color: white;
+    font-family: cursive;
+ }
+
+ /* styling the chicjen section */
+ main .chicken_menu table{
+    float: right;
+    color: white;
+    position: relative;
+    right: 50px;
+    width: 50%;
+ }
+
+ /* styling the footer of the page */
+ 
+ footer{
+    margin-top: 20px;
+    background-color: teal;
+ }
+
+ footer .order_btn a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+ }
+
+ footer .order_btn{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: transparent;
+    width: 15%;
+    border-radius: 50px;
+    position: relative;
+    bottom: 80px;
+    left:280px
+ }
+
+ footer .order_btn:hover{
+    background-color: burlywood;
+    cursor: pointer;
+ }
+ 
+ footer h1 , .footer_text{
+    color: white;
+    font-family: cursive;
+    position: relative;
+    left:80px;
+    top:20px
+
+ }
+
+ footer ul{
+    color: bisque;
+    list-style-type: none;
+    display: flex;
+    gap:180px
+ }
+
+ footer .logo_styles{
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    bottom: 30px;
+    right:50px
+ }
+
+ footer::after{
+    content: '';
+    clear: both;
+    display: table;
+ }
+
+ 
+
+
+
+
